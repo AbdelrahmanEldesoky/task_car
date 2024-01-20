@@ -1,13 +1,13 @@
-    <!-- Core JavaScript
-    ================================================== -->
-    <script src="{{ asset('website/assets/js/jquery.min.js') }}"></script>
-    <script src="{{ asset('website/assets/js/tether.min.js') }}"></script>
-    <script src="{{ asset('website/assets/js/bootstrap.min.js') }}"></script>
-    <script src="{{ asset('website/assets/js/animate.js') }}"></script>
-    <script src="{{ asset('website/assets/js/custom.js') }}"></script>
+<script src="{{asset('website/js/popper.min.js')}}"></script>
+<script src="{{asset('website/js/bootstrap.min.js')}}"></script>
+<script src="{{asset('website/js/owl.carousel.min.js')}}"></script>
+<script src="{{asset('website/js/jquery.sticky.js')}}"></script>
+<script src="{{asset('website/js/jquery.waypoints.min.js')}}"></script>
+<script src="{{asset('website/js/jquery-3.3.1.min.js')}}"></script>
+<script src="{{asset('website/js/jquery.animateNumber.min.js')}}"></script>
+<script src="{{asset('website/js/jquery.fancybox.min.js')}}"></script>
+<script src="{{asset('website/js/jquery.easing.1.3.js')}}"></script>
+<script src="{{asset('website/js/bootstrap-datepicker.min.js')}}"></script>
+<script src="{{asset('website/js/aos.js')}}"></script>
 
-    {{-- * --------------------------------------------------------------------------------  --}}
-    {{-- *                                     my script                                     --}}
-    {{-- * --------------------------------------------------------------------------------  --}}
-
-    <script src="{{ asset('website/assets/js/my_script/script.js') }}"></script>
+<script src="{{asset('website/js/main.js')}}"></script>

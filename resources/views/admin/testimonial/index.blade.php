@@ -72,6 +72,7 @@
                     @endforeach
                   </tbody>
                 </table>
+                {{ $testimonials->links() }}
               </div>
 
 

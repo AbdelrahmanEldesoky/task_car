@@ -14,5 +14,9 @@ class Car extends Model implements HasMedia
 
     protected $guarded = [];
 
+    public function category() {
+        return $this->belongsTo(Category::class,'category_id','id');
+    }
+
 
 }

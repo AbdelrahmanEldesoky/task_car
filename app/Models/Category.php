@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Spatie\MediaLibrary\HasMedia;
 use Spatie\MediaLibrary\InteractsWithMedia;
-class Category extends Model 
+class Category extends Model
 {
     use HasFactory;
 
@@ -14,5 +14,8 @@ class Category extends Model
 
     protected $guarded = [];
 
-
+    public function cars()
+    {
+        return $this->hasMany(Car::class,'category_id','id');
+    }
 }

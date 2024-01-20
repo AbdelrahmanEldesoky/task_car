@@ -1,114 +1,94 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 
-<!-- Basic -->
-<meta charset="utf-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <head>
+    <title>CarRental &mdash; Free Website Template by Colorlib</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-<!-- Mobile Metas -->
-<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
 
-<!-- Site Metas -->
-@yield('title')
-<meta name="keywords" content="">
-<meta name="description" content="">
-<meta name="author" content="">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-    integrity="sha384-LC5KX6bLq7r0MPQ6rC90qF0aPGo/jA9a27d1v4vpl3z6lFkvww5Y2K6RuzQa6aV" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{asset('website/fonts/icomoon/style.css')}}">
 
-@include('website.layout.head')
+    <link rel="stylesheet" href="{{asset('website/css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{asset('website/css/bootstrap-datepicker.css')}}">
+    <link rel="stylesheet" href="{{asset('website/css/jquery.fancybox.min.css')}}">
+    <link rel="stylesheet" href="{{asset('website/css/owl.carousel.min.css')}}">
+    <link rel="stylesheet" href="{{asset('website/css/owl.theme.default.min.css')}}">
+    <link rel="stylesheet" href="{{asset('website/fonts/flaticon/font/flaticon.css')}}">
+    <link rel="stylesheet" href="{{asset('website/css/aos.css')}}">
 
-</head>
+    <!-- MAIN CSS -->
+    <link rel="stylesheet" href="{{asset('website/css/style.css')}}">
+  </head>
+  <body>
 
-<body>
 
-    <div id="wrapper">
+    <div class="site-wrap" id="home-section">
 
-        {{-- * --------------------------------------------------------------------------------  --}}
-        {{-- *                                   start navbar                                    --}}
-        {{-- * --------------------------------------------------------------------------------  --}}
+      <div class="site-mobile-menu site-navbar-target">
+        <div class="site-mobile-menu-header">
+          <div class="site-mobile-menu-close mt-3">
+            <span class="icon-close2 js-menu-toggle"></span>
+          </div>
+        </div>
+        <div class="site-mobile-menu-body"></div>
+      </div>
 
-        <header class="market-header header">
-            <div class="container-fluid">
-                <nav class="navbar navbar-toggleable-md navbar-inverse fixed-top bg-inverse">
-                    <div class="W-100 pg-light position-fixed top_head p-1">
-                        <p class="d-inline">MINA@GMAIL.COM</p>
-                        <button class="navbar-toggler" type="button" data-toggle="collapse"
-                            data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false"
-                            aria-label="Toggle navigation">
-                            <i class="fas fa-bars text-white"></i>
-                        </button>
-                    </div>
-                    <div class="collapse navbar-collapse mt-2" id="navbarCollapse">
-                        <ul class="navbar-nav mr-auto">
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="#">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="#">Contact me</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="#">About me</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link text-white" href="#">Privacy</a>
-                            </li>
-                        </ul>
-                        <form class="form-inline">
-                            <input class="form-control mr-sm-2" type="text" placeholder="How may I help?">
-                            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                        </form>
-                    </div>
-                </nav>
+
+
+      <header class="site-navbar site-navbar-target" role="banner">
+
+        <div class="container">
+          <div class="row align-items-center position-relative">
+
+            <div class="col-3">
+              <div class="site-logo">
+                <a href="index.html"><strong>CarRental</strong></a>
+              </div>
             </div>
-        </header>
 
-        {{-- * --------------------------------------------------------------------------------  --}}
-        {{-- *                                   end navbar                                      --}}
-        {{-- * --------------------------------------------------------------------------------  --}}
+            <div class="col-9  text-right">
 
-        @yield('header')
+              <span class="d-inline-block d-lg-none"><a href="#" class=" site-menu-toggle js-menu-toggle py-5 "><span class="icon-menu h3 text-black"></span></a></span>
 
-        @yield('content')
-
-        {{-- * -------------------------------------------------------------------------------- --}}
-        {{-- *                                   start footer                                   --}}
-        {{-- * -------------------------------------------------------------------------------- --}}
-
-        <footer class="footer position-relative">
-            <div class="container">
-                <div class="row ">
-
-                    <div class="col-lg-4 col-6  d-none d-lg-block "></div>
-                    <div class="col-lg-1 col-6 text-center">
-                        <a class="h5" href="#"><i class="fa-brands fa-facebook"></i></a>
-                        <a class="h5" href="#"><i class="fa-brands fa-instagram"></i></a>
-                    </div>
-                    <div class="col-lg-2 col-6 text-center">
-                        <p> +0 (122) 123 456 </p>
-                    </div>
-                    <div class="col-lg-2 col-12 text-center">
-                        <p>mina@gmail.com</p>
-                    </div>
-                    <div class="col-lg-3 col-6  d-none d-lg-block "></div>
-                    <div class="col-md-12 text-center">
-                        <div class="copyright">
-                            <p>&copy; Markedia. Design: HTML Design
-                            <p>
-                        </div>
-                    </div>
-                </div>
+              <nav class="site-navigation text-right ml-auto d-none d-lg-block" role="navigation">
+                <ul class="site-menu main-menu js-clone-nav ml-auto ">
+                  <li class="active"><a href="{{route('home')}}" class="nav-link">Home</a></li>
+                  <li><a href="{{route('listing')}}" class="nav-link">Listing</a></li>
+                  <li><a href="{{route('testimonials')}}" class="nav-link">Testimonials</a></li>
+                  <li><a href="{{route('blog')}}" class="nav-link">Blog</a></li>
+                  <li><a href="{{route('about')}}" class="nav-link">About</a></li>
+                  <li><a href="{{route('contact')}}" class="nav-link">Contact</a></li>
+                </ul>
+              </nav>
             </div>
-        </footer>
+          </div>
+        </div>
+      </header>
+      @yield('content')
 
-        {{-- * -------------------------------------------------------------------------------- --}}
-        {{-- *                                    end footer                                    --}}
-        {{-- * -------------------------------------------------------------------------------- --}}
+      <footer class="site-footer">
+        @include('layouts.website.footer')
+     </footer>
+
 
     </div>
 
-    @include('website.layout.script')
+    <script src="{{asset('website/js/popper.min.js')}}"></script>
+    <script src="{{asset('website/js/bootstrap.min.js')}}"></script>
+    <script src="{{asset('website/js/owl.carousel.min.js')}}"></script>
+    <script src="{{asset('website/js/jquery.sticky.js')}}"></script>
+    <script src="{{asset('website/js/jquery.waypoints.min.js')}}"></script>
+    <script src="{{asset('website/js/jquery-3.3.1.min.js')}}"></script>
+    <script src="{{asset('website/js/jquery.animateNumber.min.js')}}"></script>
+    <script src="{{asset('website/js/jquery.fancybox.min.js')}}"></script>
+    <script src="{{asset('website/js/jquery.easing.1.3.js')}}"></script>
+    <script src="{{asset('website/js/bootstrap-datepicker.min.js')}}"></script>
+    <script src="{{asset('website/js/aos.js')}}"></script>
+    <script src="{{asset('website/js/main.js')}}"></script>
 
-</body>
+  </body>
 
 </html>
+

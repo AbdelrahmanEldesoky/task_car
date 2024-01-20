@@ -41,9 +41,10 @@
                   <thead>
                     <tr class="headings">
                       <th class="column-title"># </th>
-                      <th class="column-title">title</th>
-                      <th class="column-title">price</th>
-                      <th class="column-title">active</th>
+                      <th class="column-title">first name</th>
+                      <th class="column-title">last name</th>
+                      <th class="column-title">email</th>
+                      <th class="column-title">message</th>
                       <th class="column-title no-link last"><span class="nobr">Action</span>
                       </th>
 
@@ -73,6 +74,7 @@
                     @endforeach
                   </tbody>
                 </table>
+                {{ $messages->links() }}
               </div>
 
 
