@@ -49,7 +49,7 @@
 
               <div class="form-group row">
                 <div class="col-md-12">
-                  <textarea name="" id="" class="form-control" name="message" placeholder="Write your message." cols="30" rows="10"></textarea>
+                  <textarea  id="" class="form-control" name="message" placeholder="Write your message." cols="30" rows="10"></textarea>
                 </div>
               </div>
               <div class="form-group row">
