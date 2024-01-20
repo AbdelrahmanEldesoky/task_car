@@ -13,7 +13,7 @@ class BlogController extends Controller
      */
     public function index()
     {
-        $cars = Car::get();
+        $cars = Car::orderBy('id', 'DESC')->paginate(6);
         return view('website.blog',compact('cars'));
     }
 
